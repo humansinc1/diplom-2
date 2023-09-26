@@ -1,17 +1,19 @@
 @font-face {
 	font-family: 'Open Sans';
 	src: local('Open Sans'),
-		 url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff') format('woff');
+		 url('../fonts/OpenSans-Regular.woff2') format('woff2');
 	font-style: normal;
 	font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
   font-family: 'Open Sans';
 	src: local('Open Sans'),
-		 url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff') format('woff');
+		 url('../fonts/OpenSans-Bold.woff2') format('woff2');
 	font-style: normal;
 	font-weight: bold;
+    font-display: swap;
 }
 
 body, h1, h2, h3, ul, li, p {
@@ -91,7 +93,7 @@ body {
 .header {
   padding: 29px 0 123px 0;
   position: relative;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-color: #000;
@@ -300,7 +302,7 @@ body {
 
 .search-button {
   width: 48px;
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-image: url(../svg/search.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40%;
@@ -405,15 +407,15 @@ body {
 }
 
 .social-icon-dribble {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+  background-image: url("../svg/001-dribbble.svg");
 }
 
 .social-icon-pinterest {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+  background-image: url("../svg/001-pinterest.svg");
 }
 
 .social-icon-tumblr {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+  background-image: url("../svg/003-tumblr.svg");
 }
 
 .copyright {
