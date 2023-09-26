@@ -169,12 +169,13 @@ body {
 
 .article-image {
   padding-top: 6px;
-  width: 381px;
+  width: 100%;
   object-fit: cover;
 }
 
 .article-text {
   margin-left: 30px;
+  width: 50%;
 }
 
 .article-tags-list {
@@ -232,8 +233,8 @@ body {
 }
 
 .aside {
-  margin-left: 121px;
-  width: 272px;
+  margin-left: 12%;
+  width: 50%;
 }
 
 .aside-subtitle {
@@ -259,15 +260,13 @@ body {
 }
 
 .new-post-image {
-/*   display: block; */
   width: 70px;
   max-height: 70px;
   object-fit: cover;
-/*   background-color: lightgray; */
 }
 
 .new-post-meta {
-  width: 183px;
+  width: 70%;
   margin-left: 16px;
 }
 
@@ -292,7 +291,7 @@ body {
 }
 
 .search-input {
-  width: 222px;
+  width: 80%;
 }
 
 .search-input:focus {
@@ -394,7 +393,7 @@ body {
 }
 
 .social-links {
-  width: 1170px;
+  width: 100%;
   background-color: #f4f7f6;
 }
 
