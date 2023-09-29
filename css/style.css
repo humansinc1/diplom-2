@@ -157,8 +157,87 @@ body {
 
 .main {
   margin-top: 58px;
-  display: flex;
   margin-bottom: 64px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.trends {
+    margin-bottom: 64px;
+}
+
+.trends-title {
+    text-align: center;
+}
+
+.trends-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    margin: 11px auto 28px;
+    border-bottom: 3px solid #e1d9bd;
+}
+
+.trends-articles {
+    min-height: 320px;
+    display: flex;
+    gap: 5px;
+}
+
+.trends-article {
+    width: 25%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trends-article:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 2;
+}
+
+.trends-article-text {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    border: 3px solid rgba(181, 159, 91, 0.6);
+    margin: 15px;
+    z-index: 3;
+}
+
+.article1 {
+    background-image: url(../images/trend1.jpg);
+}
+
+.article2 {
+    background-image: url(../images/trend2.jpg);
+}
+
+.article3 {
+    background-image: url(../images/trend3.jpg);
+}
+
+.article4 {
+    background-image: url(../images/trend4.jpg);
+}
+
+.trends-article-title {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .main-article {
@@ -389,6 +468,23 @@ body {
   vertical-align: super;
   font-weight: bold;
   font-size: 12px;
+  color: #b59f5b;
+}
+
+.our-products-articles {
+  min-height: 435px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-products-article {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.product-link {
   color: #b59f5b;
 }
 
