@@ -34,7 +34,7 @@ body {
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 6px;
 }
 
 .text-title {
@@ -91,7 +91,7 @@ body {
 
 /* Основные стили */
 .header {
-  padding: 29px 0 123px 0;
+  padding: 28px 0 123px 0;
   position: relative;
   background-image: url("../images/banner-bg.jpg");
   background-size: cover;
@@ -125,7 +125,7 @@ body {
 
 .logo {
   width: 179px;
-  padding-left: 3px;
+  padding-left: 19px;
 }
 
 .menu-list {
@@ -152,7 +152,7 @@ body {
   text-align: center;
   font-size: 45px;
   line-height: 1.7;
-  padding: 103px 240px 0 240px;
+  padding: 98px 226px 0 240px;
 }
 
 .main {
@@ -165,18 +165,20 @@ body {
 }
 
 .trends {
-    margin-bottom: 64px;
+    margin-bottom: 57px;
 }
 
 .trends-title {
     text-align: center;
+    font-size: 20px;
+    padding-left: 14px;
 }
 
 .trends-title::after {
     content: "";
     display: block;
     width: 65px;
-    margin: 11px auto 28px;
+    margin: 9px auto 28px;
     border-bottom: 3px solid #e1d9bd;
 }
 
@@ -212,10 +214,27 @@ body {
 .trends-article-text {
     box-sizing: border-box;
     width: 100%;
-    padding: 30px;
+    padding: 34px 36px;
     border: 3px solid rgba(181, 159, 91, 0.6);
     margin: 15px;
     z-index: 3;
+}
+
+.trends-tag {
+  font-weight: bold;
+  color: #b59f5b;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+
+}
+
+.trends-tag:hover {
+  display: block;
+  border-bottom: 2px solid rgba(181, 159, 91, 0.4);
+}
+
+.trends-article-title:hover {
+  color: #b59f5b;
 }
 
 .article1 {
@@ -240,21 +259,23 @@ body {
     line-height: 1.2;
 }
 
+.main-articles {
+  margin-left: 16px;
+}
+
 .main-article {
   display: flex;
-  margin-bottom: 54px;
+  margin-bottom: 49px;
 
 }
 
 .article-image {
   padding-top: 6px;
-  width: 100%;
   object-fit: cover;
 }
 
 .article-text {
   margin-left: 30px;
-  width: 50%;
 }
 
 .article-tags-list {
@@ -312,8 +333,8 @@ body {
 }
 
 .aside {
-  margin-left: 12%;
-  width: 50%;
+  margin-left: 10%;
+  width: 48%;
 }
 
 .aside-subtitle {
@@ -335,12 +356,10 @@ body {
 
 .new-post {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .new-post-image {
-  width: 70px;
-  max-height: 70px;
   object-fit: cover;
 }
 
@@ -367,10 +386,11 @@ body {
 .search-form {
   margin-top: 57px;
   display: flex;
+  justify-content: space-between;
 }
 
 .search-input {
-  width: 80%;
+  width: 83%;
 }
 
 .search-input:focus {
@@ -431,7 +451,7 @@ body {
 
 .aside-tag {
   box-sizing: border-box;
-  padding: 4px 13px;
+  padding: 3px 13px;
   height: 30px;
   color: #0f0d0e;
   font-size: 12px;
@@ -474,30 +494,102 @@ body {
 .our-products-articles {
   min-height: 435px;
   display: flex;
-  justify-content: space-between;
+  gap: 64px;
+  padding-left: 16px;
 }
 
-.our-products-article {
+.our-products-title {
+  margin-top: 5px;
+}
+
+.our-product-article {
   width: 33.33%;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+}
+
+.our-product-image {
+  z-index: 1;
+  box-sizing: border-box;
+  padding-left: 23px;
+  padding-right: 23px;
+  width: 100%;
+}
+
+.our-products-article-title {
+  font-size: 20px;
 }
 
 .product-link {
   color: #b59f5b;
 }
 
+.product-description {
+  border: solid 3px rgba(181, 159, 91, 0.6);
+  padding: 48px 20px 20px 19px;
+  margin-top: -33px;
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+}
+
+.our-products-description {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.our-products-article-title {
+  margin-bottom: 2px;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+.product-bottom {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-price-old {
+  text-decoration: line-through;
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: -6px;
+}
+
+.product-price-new {
+  font-size: 20px;
+  padding-bottom: 0;
+
+}
+
+.product-button {
+  padding: 16px 32px;
+  color: #fff;
+  border: none;
+  background-color:#323232;
+
+}
+
+.product-button:hover {
+  background-color: #b59f5b;
+  cursor: pointer;
+}
+
 .social-links {
-  width: 100%;
+  width: 99%;
   background-color: #f4f7f6;
+  margin-left: 16px;
 }
 
 .social-icons {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  padding: 30px 0;
+  padding: 35px 0;
   gap: 25px;
 }
 
@@ -515,10 +607,11 @@ body {
 
 .copyright {
   display: block;
-  margin-top: 72px;
+  margin-top: 66px;
   margin-bottom: 40px;
   text-align: center;
   font-size: 12px;
   font-weight: bold;
   color: #999999;
+  padding-left: 26px;
 }
